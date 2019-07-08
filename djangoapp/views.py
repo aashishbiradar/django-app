@@ -1,5 +1,5 @@
 from django.contrib import messages
-from tasks.demo import *
+from djangoapp.tasks.demo import *
 
 def send_message():
     add.delay(5,4)
