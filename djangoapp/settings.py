@@ -25,7 +25,7 @@ SECRET_KEY = 'aa#0zl@nbr3#8d#!bn&3!u_i$m!(3kwr53w$6j&!=v!u0(7gfh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.6']
 
 
 # Application definition
@@ -118,3 +118,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CELERY_BROKER_URL = 'amqp://localhost'
